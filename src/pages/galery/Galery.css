@@ -1,0 +1,21 @@
+.galery-position{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.galery-img{
+    width: clamp(500px, 20vh, 300px );
+    margin: 10px;
+}
+.galery-img:hover{
+    filter: contrast(1.2);
+    border: 2px solid #2d4059;
+}
+@media all and (max-width:610px) {
+
+    .galery-img{
+        flex: none;
+        width: 300px;
+    }
+}

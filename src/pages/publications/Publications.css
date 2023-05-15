@@ -1,0 +1,59 @@
+
+  .main-content{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border: 5px solid #2d4059;
+    width: clamp(800px, 35vw, 350px);
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    background: linear-gradient(56deg, rgb(10, 10, 10), #6f6a75);
+}
+  .info-up{
+    display: flex;
+    flex-direction: row;
+  }
+  .nickname, .date{
+    margin-left: 20px;
+    color: rgb(121, 117, 113);
+    align-self: center;
+    
+  }
+  .name, .iconCheckCircle{
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: larger;
+  }
+  .info-text{
+    color: antiquewhite;
+    margin-top: 5px;
+  }
+  .main-info{
+    width: clamp(700px, 30vw,  300px);
+  }
+  .main-image{
+    width: inherit;
+    border-radius: 10px;
+  }
+  .info-down{
+    color: rgb(121, 117, 113);
+    font-size: larger;
+    display: flex;
+    justify-content: space-around;
+  }
+  .icon-info{
+    display: flex;
+  }
+  .icon-info-p{
+    margin: 0;
+    font-size: small;
+    align-self: center;
+  }
+  @media all and (max-width:610px) {
+
+    .main-content, .main-image, .main-info{
+        flex: none;
+        width: 300px;
+    }
+}

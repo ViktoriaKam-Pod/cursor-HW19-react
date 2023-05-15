@@ -1,0 +1,32 @@
+.navigation{
+    background-color: #2d4059;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 54px;
+    color: antiquewhite;
+    padding: 0;
+    flex-wrap: wrap;
+}
+li{
+    list-style-type: none;
+}
+.link{
+    color: inherit;
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration:overline underline #090d14;
+}
+@media all and (max-width:610px) {
+
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: start;
+    }
+    li{
+        margin: 10px;
+    }
+}
